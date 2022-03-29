@@ -37,18 +37,12 @@ dependencies {
     implementation androidx.appCompat
     implementation google.material
 
+    implementation project(":core")
+    implementation project(":f_main")
+
     //TODO move to ext
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-
-    //Core ui
-    implementation jetpack.compose.ui
-    // Tooling support (Previews, etc.)
-    implementation jetpack.compose.uiTooling
-    // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
-    implementation jetpack.compose.foundation
-    // Material Design
-    implementation jetpack.compose.material
 
 }
