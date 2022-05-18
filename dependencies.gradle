@@ -2,15 +2,17 @@ ext {
     applicationName = "Munchkin Kit"
 
     versions = [
-            ktxCoreVer       : "1.7.0",
-            coroutinesVer    : "1.6.0-RC",
-            appCompatVer     : "1.4.0",
-            fragmentKtxVer   : "1.4.0",
-            googleMaterialVer: "1.4.0",
-            jetpackComposeVer: "1.0.5",
-            viewModelVer     : "2.4.0",
-            lifecycleVer     : "2.4.0",
-            kodeinVer        : "7.10.0"
+            ktxCoreVer          : "1.7.0",
+            coroutinesVer       : "1.6.0-RC",
+            appCompatVer        : "1.4.0",
+            fragmentKtxVer      : "1.4.0",
+            googleMaterialVer   : "1.4.0",
+            jetpackComposeVer   : "1.0.5",
+            viewModelVer        : "2.4.0",
+            lifecycleVer        : "2.4.0",
+            kodeinVer           : "7.10.0",
+            jetpackNavigationVer: "2.4.2",
+            moshiVer            : "1.13.0"
     ]
 
     kotlin = [
@@ -31,16 +33,21 @@ ext {
     ]
 
     jetpack = [
-            compose: [
+            compose   : [
                     ui        : "androidx.compose.ui:ui:${versions.jetpackComposeVer}",
                     uiTooling : "androidx.compose.ui:ui-tooling:${versions.jetpackComposeVer}",
                     foundation: "androidx.compose.foundation:foundation:${versions.jetpackComposeVer}",
-                    material  : "androidx.compose.material:material:${versions.jetpackComposeVer}"
-            ]
-
+                    material  : "androidx.compose.material:material:${versions.jetpackComposeVer}",
+            ],
+            navigation: "androidx.navigation:navigation-compose:${versions.jetpackNavigationVer}"
     ]
 
     kodein = [
-            android: "org.kodein.di:kodein-di-framework-android-x-viewmodel:${versions.kodeinVer}"
+            android: "org.kodein.di:kodein-di-framework-android-x-viewmodel:${versions.kodeinVer}",
+            compose: "org.kodein.di:kodein-di-framework-compose:${versions.kodeinVer}"
+    ]
+
+    moshi = [
+            core: "com.squareup.moshi:moshi-kotlin:${versions.moshiVer}"
     ]
 }

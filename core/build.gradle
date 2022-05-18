@@ -34,6 +34,14 @@ dependencies {
     implementation androidx.appCompat
     implementation kodein.android
 
+    implementation jetpack.compose.ui
+
+    implementation jetpack.navigation
+
+    implementation project(":navigation")
+
+    //feature-modules
+    implementation project(":f_main")
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
